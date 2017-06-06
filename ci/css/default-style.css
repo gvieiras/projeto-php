@@ -1,0 +1,468 @@
+#text-caicara {
+    color:#FF6600;
+}
+
+a {
+    text-decoration:none;
+}
+
+a:link, a:visited, a:active{
+    color:white;
+}
+
+a:hover{
+    color:white;
+    text-decoration:none;
+}
+
+
+@font-face {
+    font-family:'BreeSerif';
+    src: url('../fonts/BreeSerif-Regular.ttf');
+}
+
+body {
+    background-color:#dddddd;
+    font-family:BreeSerif, sans-serif;
+    color:black;
+    
+   
+}
+
+#alfabeto{
+    text-align: center;
+    background-color: #FF6600;
+ 
+}
+#alfabeto>a:hover{
+   background-color:white;
+}
+
+#alfabeto>a{
+    color:black;
+}
+
+#num{
+    text-align: center;
+    background-color: #FF6600;    
+}
+
+#num>a{
+    color:black;
+}
+
+#num>a:hover{
+    color:white;
+}
+
+
+
+#formulario{
+    width:40%;
+    float:left;
+    margin:0 auto;
+    margin-bottom: 15%;
+}
+
+#formulario-cadastrar{
+    width:40%;
+    float:left;
+    margin:0 auto;
+    left:25%;
+    position: relative;
+    margin-bottom: 15%;
+}
+
+form{
+    width:100%;
+    margin-top:30px;
+}
+
+form>input{
+    font-size:26px;
+    height:60px;
+    width:60%;
+    margin-bottom:10px;
+    border:0;
+    border-radius:10px;
+    background-color:Yellow;
+}
+
+form label{
+    display:block;
+}
+#botao_Enviar{
+     width:50px;
+     height:25px;
+     font-size:12px;
+     border:none;
+     background-color:#FF6600;
+     color:black;
+     border-radius:0;
+}
+
+
+form>textarea{
+    height:120px;
+    width:60%;
+    font-size:26px;
+    border:0;
+    border-radius:10px;
+    
+}
+
+#corpo{
+    margin-top:50px;
+}
+
+#contato{
+    width:100%;
+    height:400px;
+    background-color:#FF6600;
+}
+
+
+#sobre{
+    width:60%;
+    float:left;
+}
+
+#sobre>p{
+    font-size:26px;
+    margin-top:30px;
+    color:white;
+    margin-bottom:50px;
+}
+
+#sobre>p>a{
+    font-size:16px;
+    background-color:#C55003;
+    padding:10px;
+}
+
+#sobre>p>a:hover{
+    background-color:black;
+}
+
+#sobre img{
+    margin-left:30px;
+}
+
+#aesq div {
+    padding: 10px;
+}
+
+#adir div {
+    padding: 25px;
+}
+
+#aesq{
+    float:left;
+    background-color:#ff6600;
+    margin-left: 5%;
+}
+
+#adir{
+    float:left;
+    background-color:#ff6600;
+    margin-left: 10px;
+}
+
+
+#pesq {
+    background-color:white;
+    width:30%;
+    border:0;
+    
+}
+
+
+#btp {
+    background-color:black;
+    color:white;
+    border:none;
+}
+
+
+
+main {
+    width: 42%;
+    background-color: #fff;
+    margin-left: 35px;
+    padding: 10px;
+    float: left;
+    margin-bottom:35px;
+}
+
+#controle-fonte {
+   text-align: right;
+    
+}
+
+/*div>input{
+border:0;
+   color:black;
+   background-color:#FF6600;
+    transition: background-color 2s,color 2s;
+}*/
+
+/*div>input:hover{
+     color:#FF6600;
+     background-color:black;
+}*/
+
+.UltArtistaUnidade{
+    width:100%;
+    height:90px;
+    padding-left:20px;
+}
+
+.UltArtista h2{
+    font-size:18px;
+    margin:0;
+}
+
+.UltArtista p{
+    padding:0;
+    float:left;
+}
+
+.UltArtista img{
+    float:left;
+    margin-right:15px;
+}
+
+.UltArtista{
+    width:100%;
+}
+
+.artista{
+    width:20%;
+    float:left;
+}
+
+.artista>p{
+    background-color:#FF6600;
+}
+
+.local{
+    width:100%;
+    height:120px;
+    padding-left:20px;
+}
+
+.local h2{
+    font-size:20px;
+    margin:0;
+}
+
+.local a{
+    background-color:#FF6600;
+    padding:2px;
+}
+
+.local p{
+    padding:0;
+    float:left;
+}
+
+
+
+aside {
+    width: 42%;
+    background-color: #fff;
+    margin-right: 35px;
+    padding: 10px;
+    float: right;
+}
+
+hr{
+    
+  border-top: 1px solid #FF6600;
+}
+
+div p{
+    padding-left:5%;
+}
+
+/* LINKS passar o mouse em cima fica branco*/
+header a:hover{
+    color:#FF6600;
+    text-decoration:none;
+}
+
+header ul li{
+    list-style-type:none;
+    padding:0;
+    display:inline;
+}
+
+ul{
+    display:inline;
+    padding:0;
+}
+
+li:first-child{
+    margin-right:25%;
+}
+
+li:nth-child(4){
+    margin-right:45%;
+}
+
+h1{
+    font-size:24px;
+    padding:0;
+    display:inline;
+}
+
+.titulo{
+    padding:10px;
+    background-color:#FF6600;
+    z-index:50;
+}
+
+.titulo:first-child{
+    left:-20px;
+    top:-18px;
+    position:relative;
+}
+
+
+
+nav ul li:last-child{
+    color:black;
+}
+
+.botao {
+    background-color: #FF6600;
+    padding: 5px;
+    margin: 5px;
+    float: right;
+    color:black!important;
+    transition: background-color 0.5s,color 0.5s;
+
+}
+
+.botao:hover{
+     color:#FF6600!important;
+     background-color:black;
+}
+
+aside a {
+    color: #000;
+}
+
+header {
+    margin:0;
+    padding:10px;
+    background-color:black;
+    color:white;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+	background-color: #000;
+	clear: both;
+	text-align: center;
+	margin: 0;
+	color:white;
+}
+
+#pesquisar-barra{
+    width:100%;
+    background-color:#FF6600;
+    padding:10px;
+    margin:0;
+    margin-bottom:25px;
+}
+
+
+#allFlyers>div:nth-child(2){
+    margin-bottom:50px;
+}
+
+#allFlyers>div:first-child{
+    margin-right:40px;
+}
+
+#allFlyers>div:last-child{
+    margin-left:40px;
+}
+
+#allFlyers{
+    margin:0 auto;
+    width:980px;
+}
+
+.flyer{
+    width:300px;
+    height:500px;
+    background-color:white;
+    float:left;
+}
+
+.flyer>img{
+    margin:5px 0px 0px 5px;
+}
+
+h3{
+    margin-left:5px;
+}
+
+.flyer>p{
+    padding-left:5px;
+}
+
+.flyer>p>a{
+    background-color:#FF6600;
+    color:black;
+}
+
+#paginasFundo{
+    background-color:#FF6600;
+    width:25%;
+    margin:0 auto;
+    text-align:center;
+}
+
+#paginasFundo>a{
+    color:black;
+}
+
+#paginasFundo>a:hover{
+    background-color:white;
+}
+
+table{
+    width:100%;
+}
+
+footer {
+    background-color: #000;
+}
+
+@media screen and (max-width: 991px) {
+    .col-md-2,.col-md3{
+        text-align:left!important;
+        
+    }
+    .titulo{
+    padding:0px;
+    left:0;
+    }
+    main{
+        width:100%;
+        margin:0;
+        margin-bottom:5%;
+    }
+    aside{
+        width:100%;
+        margin:0;
+    }
+    
+    .titulo:first-child{
+        left:0;
+    }
+}
