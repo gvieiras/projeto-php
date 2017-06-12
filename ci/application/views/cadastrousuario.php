@@ -2,7 +2,7 @@
 <html lang="br">
     <head>
     <meta charset="UTF-8" />
-    <title>Palco Caiçara - Home</title>   
+    <title>Palco Caiçara - Cadastro de usuário</title>   
     
     
     <!--styles-->
@@ -22,92 +22,114 @@
         <header>
             <ul>
                 <div class="row">
-                <div class="col-md-3">
-                    <li><h1><a href="home.html">
-                        <span class="glyphicon glyphicon-cd" aria-hidden="true"></span> palco <span id="text-caicara">caiçara</span></a>
-                        </h1></li>
-                </div>
+                    <div class="col-md-3">
+                        <li id="palcocaicara"><h1><a href="home.html">
+                            <span class="glyphicon glyphicon-cd" aria-hidden="true"></span> palco <span id="text-caicara">caiçara</span></a>
+                                              </h1>
+                        </li>
+                    </div>
+                        
+                    <!--                            tirar css inline dps                                --> 
+                    <!--                            tirar css inline dps                                --> 
+                    <!--                            tirar css inline dps                                --> 
+                    <div class="col-md-2" style="text-align:right">
+                        <a href="https://php-yolatengo.c9users.io/ci/artistas"><li style="margin:0">artistas  <span class="glyphicon glyphicon-sunglasses"></span></li></a>
+                    </div>
+                        
+                    <div class="col-md-2" style="text-align:center"> 
+                        <a href="https://php-yolatengo.c9users.io/ci/eventos"><li style="margin:0">eventos  <span class="glyphicon glyphicon-calendar"></span></li></a>
+                    </div>
                     
-                <!--tirar css inline dps-->    
-                <div class="col-md-2" style="text-align:right">
-                    <li style="margin:0"><a href="artistas.html">artistas</a></li>
+                    <div class="col-md-2">
+                        <a href="https://php-yolatengo.c9users.io/ci/cadastrousuario"><li>[cadastro / login] <span class="glyphicon glyphicon-user"></span></span></li></a>
+                    </div>
                 </div>
-                    
-                <div class="col-md-2" style="text-align:center"> 
-                    <li style="margin:0"><a href="eventos.html">eventos</a></li>
-                </div>
-                    
-                <div class="col-md-3" style="text-align:left">
-                    <li style="margin:0"><a href="em_alta.html">em alta</a></li>
-                </div>
-                
-                <div class="col-md-2">
-                    <li><a href="cadastro-usuario.html">Cadastre-se!</a></li>
-                </div>
-                </div>
-                </ul>
+            </ul>
         </header>
 
         <div id="corpo">
             
         <!--ULTIMOS ARTISTAS SELECIONADOS-->
-        <main id="formulario-cadastrar">
-            <h1>Cadastre-se</h1>
-            
-            <form name="cadastro" action="/ci/dbnome/inserir" method="post">
-                  <p>
-                        <label for="nome-completo">Nome completo:</label> 
-                        <input type="text" id="nome-completo" name="nm_completousuario" required autofocus/>
-                  </p>
-                            
-                  <p>
-                        <label for="nome-usuario">Nome de usuário:</label> 
-                        <input type="text" id="nome-usuario" name="nm_usuario" required/>
-                  </p>
-                  
-                  <p>
-                        <label for="email-usuario">E-mail:</label> 
-                        <input type="email" id="email-usuario" name="ds_email" required/>
-                  </p>
-                            
-                  <p>
-                        <label for="senha">Senha:</label> 
-                        <input type="password" id="senha" name="ds_senha" required/>
-                  </p>
-                            
-                  <p>
-                        <label for="re-senha">Insira sua senha novamente:</label>
-                        <input type="password" id="re-senha" name="reinserirsenhausuario" required/>
-                  </p>
-                           
-                  <p>
-                        <fieldset>
-                        <legend>Sexo:</legend>
-                              <input type="radio" value="M" name="ic_sexo" required>
-                              <label for="masculino">Masculino</label>
-                              
-                              <input type="radio" value="F" name="ic_sexo" required>
-                              <label for="feminino">Feminino</label>
-                        </fieldset>
-                  </p>
-                            
-                  <p>
-                        <label for="data">Data de nascimento:</label>
-                        <input type="date" id="data" name="dt_nascimento" required/>
-                  </p>
-            
-                  <p>
-                        <input type="submit" id="botao_Enviar" name="cmdSend" value="enviar" />
-                  </p>
-            </form>
+        <div id="seguraTudo">
+            <div id="caixaLogin">
+                    <h1 style="margin:5px;margin-bottom:10px;position:absolute">Já é um usuário? Logue-se!</h1><br>
+                    
+                    <form name="logar" action="/ci/dbnome/autentica" method="post">
+                        <p>
+                            <label for="nome-usuario">Nome do usuário:</label>
+                                <input type="text" id="nome-usuario" name="nm_usuario" required/>
+                        </p>
+                        
+                        <p>
+                                <label for="senha">Senha:</label> 
+                                <input type="password" id="senha" name="ds_senha" maxlength="12" required/>
+                        </p>
+                        <p>
+                                <input type="submit" class="botao_Enviar" name="cmdSend" value="entrar" style="background-color:black;color:#FF6600" />
+                        </p>
+                        
+                    </form>
 
-
-            
-           
-        </main>
-        
-        <!--PROXIMOS EVENTOS-->
-        <br><br><br><br><br><br><br>
+                </div>
+            <main id="formulario-cadastrar">
+                <p style="float:right;width:40%;font-size:18px;margin-right:10px;padding:0">No <span id="plc" style="font-size:31px;color:#FF6600">palco caiçara</span> você pode catalogar seus artistas favoritos, avaliar materiais musicais, descobrir eventos e divulgar sua banda!</p>
+                <div id="caixaCadastro">
+                    <h1><span class="cadastro-h1">Novo usuário? Cadastre-se!</span></h1>
+                    
+                    
+                    <form name="cadastro" action="/ci/dbnome/inserir" method="post">
+                          <p>
+                                <label for="nome-completo">Nome completo:</label> 
+                                <input type="text" id="nome-completo" name="nm_completousuario" required autofocus/>
+                          </p>
+                                    
+                          <p>
+                                <label for="nome-usuario">Nome do usuário:</label> 
+                                <input type="text" id="nome-usuario" name="nm_usuario" required/>
+                          </p>
+                          
+                          <p>
+                                <label for="email-usuario">E-mail:</label> 
+                                <input type="email" id="email-usuario" name="ds_email" required/>
+                          </p>
+                                    
+                          <p>
+                                <label for="senha">Senha:</label> 
+                                <input type="password" id="senha" name="ds_senha" maxlength="12" required/>
+                          </p>
+                                   
+                          <p>
+                                <fieldset>
+                                <legend>Sexo:</legend>
+                                      <label for="masculino">Masculino</label>
+                                      <input type="radio" value="M" name="ic_sexo" required>
+                                      
+                                      <label for="feminino">Feminino</label>
+                                      <input type="radio" value="F" name="ic_sexo" required>
+                                      
+                                </fieldset>
+                          </p>
+                                    
+                          <p>
+                                <label for="data">Data de nascimento:</label>
+                                <input type="date" id="data" name="dt_nascimento" required/>
+                          </p>
+                    
+                          <p>
+                                <input type="submit" class="botao_Enviar" name="cmdSend" value="enviar" />
+                          </p>
+                    </form>
+                        <form action="https://php-yolatengo.c9users.io/ci/editarusuario" method="post">
+                                <input class="artistaBotao" type="submit" value="editar"></input>
+                        </form>
+                </div>
+                
+    
+                
+               
+            </main>
+                
+            </div>
         </div>
         <footer>
             &copy;Palco Caiçara  |  Desenvolvido por blablabla
