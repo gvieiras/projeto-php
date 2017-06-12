@@ -70,7 +70,17 @@
                       <input type="date" id="dt_evento" name="dt_evento" required/>
                   </p>
                   
-                 
+                  <p>
+                        <label for="ds_bandas">Bandas que irão se apresentar (separe-as por vírgula):</label> 
+                        <textarea rows="4" cols="50" name="ds_bandas" id="ds_bandas"></textarea>
+                  </p>
+                  
+                 <p>
+                      <label for="vl_evento">Valor do evento:</label> 
+                      <input type="text" id="vl_evento" name="vl_evento" required />
+                  </p>
+                  
+                  <p>
                         <input type="submit" id="botao_Enviar" name="cmdSend" value="enviar"/>
                   </p>
                  
