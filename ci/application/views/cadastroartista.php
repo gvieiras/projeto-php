@@ -30,20 +30,16 @@
                     
                 <!--tirar css inline dps-->    
                 <div class="col-md-2" style="text-align:right">
-                    <li style="margin:0"><a href="artistas.html">artistas</a></li>
-                </div>
+                        <a href="https://php-yolatengo.c9users.io/ci/artistas"><li style="margin:0">artistas  <span class="glyphicon glyphicon-sunglasses"></span></li></a>
+                    </div>
+                        
+                    <div class="col-md-2" style="text-align:center"> 
+                        <a href="https://php-yolatengo.c9users.io/ci/eventos"><li style="margin:0">eventos  <span class="glyphicon glyphicon-calendar"></span></li></a>
+                    </div>
                     
-                <div class="col-md-2" style="text-align:center"> 
-                    <li style="margin:0"><a href="eventos.html">eventos</a></li>
-                </div>
-                    
-                <div class="col-md-3" style="text-align:left">
-                    <li style="margin:0"><a href="em_alta.html">em alta</a></li>
-                </div>
-                
-                <div class="col-md-2">
-                    <li><a href="cadastro-usuario.html">Cadastre-se!</a></li>
-                </div>
+                    <div class="col-md-2">
+                        <a href="https://php-yolatengo.c9users.io/ci/cadastrousuario"><li>[cadastro / login] <span class="glyphicon glyphicon-user"></span></span></li></a>
+                    </div>
                 </div>
                 </ul>
         </header>
@@ -53,14 +49,19 @@
         <main id="formulario-cadastro-artista">
             <h1>Cadastre-se</h1>
             
-            <form name="cadastro-artista" action=/ci/ArtistasCon/inserir" method="post">
+            <form name="cadastro-artista" action="/ci/ArtistasCon/inserir" method="post">
                   <p>
-                        <label for="nome-artista">Nome Artista/Banda :</label> 
+                        <label for="nome-artista">Nome Artista/Banda:</label> 
                         <input type="text" id="nome-artista" name="nm_artista" required autofocus/>
                   </p>
                   
                   <p>
-                        <label for="genero">Genêro :</label> 
+                        <label for="nome-artista">Membros (separe-os por vírgula): </label> 
+                        <input type="text" id="ds_membros" name="ds_membros" autofocus/>
+                  </p>
+                  
+                  <p>
+                        <label for="genero">Genêro:</label> 
                         <input type="text" id="genero" name="ds_genero" required autofocus/>
                   </p>
                   
@@ -72,23 +73,22 @@
                   
                   <p>
                         <label for="link-facebook">Facebook:</label> 
-                        <input type="text" id="link-facebook" name="ds_LinkFacebook" required/>
+                        <input type="text" id="link-facebook" name="ds_LinkFacebook" />
                   </p>
                             
                   <p>
                         <label for="link-youtube">Youtube:</label> 
-                        <input type="text" id="link-youtube" name="ds_LinkYoutube" required/>
+                        <input type="text" id="link-youtube" name="ds_LinkYoutube" />
                   </p>
+        
+                          
                             
             
                   <p>
                         <input type="submit" id="botao_Enviar" name="cmdSend" value="enviar"/>
                   </p>
             </form>
-
-
-            
-           
+                        
         </main>
         
         <!--PROXIMOS EVENTOS-->
