@@ -58,4 +58,14 @@ $route['menu'] = "pagina/menu";
 $route['p1'] = "pagina/pagina1";
 $route['p2'] = "pagina/pagina2";
 $route['p3'] = "pagina/pagina3";
-$route['cadastro_usuario'] = "pagina/cadastrousuario";
+
+$route['cadastrousuario'] = 'pagina/cadastrousuario';
+$route['editarusuario'] = 'Dbnome/MostraUsuario';
+$route['cadastroartista'] = 'pagina/cadastroartista';
+$route['cadastromaterial'] = 'MaterialCon/cadastroMaterial';
+$route['cadastroevento'] = 'pagina/cadastroevento';
+$route['editarevento'] = 'EventosCon/cadastroEvento';
+
+$route['eventos'] = 'EventosCon/MostrarEventos';
+$route['artistas'] = 'ArtistasCon/MostrarArtistas';
+$route['paginaArtista'] =  'PaginaArtistaCon/MostrarArtistaEInfos';
